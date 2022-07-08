@@ -1,11 +1,13 @@
 import { useEffect, useReducer } from "react"
 
+
 const initialState = {
     loading: true,
     error: "",
     data: [],
 }
 
+// reducer function to fetch data
 const reducer = (state, action) => {
     switch (action.type) {
         case ('FETCH_SUCCESS'):
@@ -26,6 +28,7 @@ const reducer = (state, action) => {
 
 }
 
+//to fetch data
 export function useFetch(url) {
     const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -38,7 +41,7 @@ export function useFetch(url) {
             .catch(e => {
                 dispatch({ type: 'FETCH_ERROR' })
             })
-    }, []);
+    }, [url]);
 
     return state
 }

@@ -14,6 +14,7 @@ export class DataGridClsComponent extends React.Component {
     }
 
     componentDidMount() {
+        // to fetch todos and posts
         this.setState({ ...this.state, loading: true })
         Promise.all([
             fetch("https://jsonplaceholder.typicode.com/todos")
@@ -34,6 +35,7 @@ export class DataGridClsComponent extends React.Component {
             })
     }
 
+    // to change the data to be displayed
     changeActiveTab = (value) => {
         this.setState({ ...this.state, activeTab: value })
     }
