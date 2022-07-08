@@ -18,3 +18,7 @@ Uygulamanızı yayınlamak için [Netlify](https://www.netlify.com/)'ı kullanab
 - [Bu](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) adımları izleyin.
 - Sizin için bir web sitesi oluşturacaktır.
 - Bu bağlantıyı reponuzun README.md'sinde paylaşın.
+
+# live
+
+[Click Here](https://radiant-salmiakki-22f30d.netlify.app/)
